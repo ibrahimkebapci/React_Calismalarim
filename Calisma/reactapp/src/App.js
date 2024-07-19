@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Users from "./Components/Users";
 import AddUser from "./Components/AddUser"; // Düzeltilmiş import yolu
+import Test from "./Components/Test";
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Test test = "denem"/>
         <Navbar title="User App" />
         <Users users={this.state.users} /> {/* Users bileşenine props olarak users verisi gönderiliyor */}
         <AddUser />
