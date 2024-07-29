@@ -1,10 +1,14 @@
+
+/*
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import UserConsumer from "../context";
 
 const UserContext = React.createContext();
 
+/*
 const reducer = (state,action) = > 
+
 {
   switch (action.type)
   {
@@ -52,8 +56,10 @@ export class UserProvider extends Component {
       </UserContext.Provider>
     );
   }
+    
 }
 
 const UserConsumer = UserContext.Consumer;
 
 export default UserConsumer;
+*/

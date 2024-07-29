@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import User from "./User";
 class Users extends Component {
+  /*
   render() {
     const {users} = this.props;
     console.log(users);
@@ -35,6 +36,8 @@ class Users extends Component {
       </div>
     )
   }
+    */
 }
 
-export default Users;
+//export default Users;
+

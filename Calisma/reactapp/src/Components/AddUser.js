@@ -1,6 +1,6 @@
+/*
 import React, { Component } from 'react'
-import 
-
+/*
 
 class AddUser extends Component {
   render() {
@@ -48,3 +48,4 @@ class AddUser extends Component {
 }
 
 export default AddUser;
+*/

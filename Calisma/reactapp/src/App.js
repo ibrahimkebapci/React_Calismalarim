@@ -1,10 +1,33 @@
-import React, { Component } from "react";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './Components/Dashboard';
+import Pages from './Components/Pages';
+import Posts from './Components/Posts';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/pages" element={<Pages />} />
+        <Route path="/posts" element={<Posts />} />
+        {/* Diğer rotaları gerektiği gibi ekleyin */}
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+/*
 import Navbar from "./Components/Navbar";
 import Users from "./Components/Users";
-import AddUser from "./Components/AddUser"; // Düzeltilmiş import yolu
 import Test from "./Components/Test";
+*/
 
+/*
 class App extends Component {
   state = {
     users: [
@@ -34,11 +57,13 @@ class App extends Component {
       <div className="container">
         <Test test = "denem"/>
         <Navbar title="User App" />
-        <Users users={this.state.users} /> {/* Users bileşenine props olarak users verisi gönderiliyor */}
+        <Users users={this.state.users} /> {/* Users bileşenine props olarak users verisi gönderiliyor 
+        /*
         <AddUser />
       </div>
     );
   }
-}
 
+}
 export default App;
+*/

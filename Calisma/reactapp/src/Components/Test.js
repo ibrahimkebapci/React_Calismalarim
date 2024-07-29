@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+/*
 class Test extends Component {
   constructor(props) {
     super(props);
@@ -26,3 +26,4 @@ class Test extends Component {
 }
 
 export default Test;
+*/

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import UserConsumer from "../context";
 
-
+/*
 class User extends Component {
     state = {
         isVisible: false
@@ -74,3 +74,4 @@ User.propTypes = {
 }
 
 export default User;
+*/
