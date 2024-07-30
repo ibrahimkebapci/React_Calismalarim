@@ -3,67 +3,49 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './Components/Dashboard';
 import Pages from './Components/Pages';
 import Posts from './Components/Posts';
+import Sidebar from './Sidebar';
+import EventTimeline from './EventTimeLine';
 
+// 3.Bölümün Kodu
+/*
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/pages" element={<Pages />} />
-        <Route path="/posts" element={<Posts />} />
-        {/* Diğer rotaları gerektiği gibi ekleyin */}
-      </Routes>
-    </Router>
+    <div className="App" style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+      <EventTimeline />
+    </div>
   );
 }
 
 export default App;
-
-
-
-/*
-import Navbar from "./Components/Navbar";
-import Users from "./Components/Users";
-import Test from "./Components/Test";
 */
 
+// 1.Bölümün Kodu
 /*
-class App extends Component {
-  state = {
-    users: [
-      {
-        id: 1,
-        name: "Bram",
-        salary: "5000",
-        department: "Bilişim",
-      },
-      {
-        id: 2,
-        name: "Keramettin Taslak",
-        salary: "4000",
-        department: "Pazarlama",
-      },
-      {
-        id: 3,
-        name: "Busbus",
-        salary: "6000",
-        department: "Lojistik",
-      },
-    ],
-  };
-
-  render() {
-    return (
-      <div className="container">
-        <Test test = "denem"/>
-        <Navbar title="User App" />
-        <Users users={this.state.users} /> {/* Users bileşenine props olarak users verisi gönderiliyor 
-        /*
-        <AddUser />
+function App() {
+  return (
+    <div className="App" style={{ display: 'flex' }}>
+      <Sidebar />
+      <div style={{ flex: 1, padding: '20px' }}>
+      <h1>Content Area</h1>
+       // { Diğer içerikler burada yer alacak }
       </div>
-    );
-  }
-
+    </div>
+  );
 }
+export default App;
+*/
+
+
+
+//2 bölüm
+/*
+function App() {
+  return (
+    <div className="App">
+      <Dashboard />
+    </div>
+  );
+}
+
 export default App;
 */
