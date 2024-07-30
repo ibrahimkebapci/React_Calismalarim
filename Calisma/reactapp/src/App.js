@@ -5,6 +5,29 @@ import Pages from './Components/Pages';
 import Posts from './Components/Posts';
 import Sidebar from './Sidebar';
 import EventTimeline from './EventTimeLine';
+import './App.css';
+import UserStats from './UserStats'; // UserStats bileşenini içeri aktar
+
+
+// 4.Bölümün Kodu
+/*
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to User Stats Dashboard</h1>
+      </header>
+      <main>
+      //{ UserStats bileşenini render et}
+        <UserStats /> }
+      </main>
+    </div>
+  );
+}
+  export default App;
+*/
+
+
 
 // 3.Bölümün Kodu
 /*
