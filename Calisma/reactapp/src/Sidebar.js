@@ -1,6 +1,6 @@
 // src/Sidebar.js
 //1. Bölümün Kodları
-/*
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -108,4 +108,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-*/

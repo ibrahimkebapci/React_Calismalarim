@@ -1,0 +1,46 @@
+/* Components/LatestEvents.css */
+
+.latest-events {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline {
+    margin-top: 20px;
+  }
+  
+  .event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .event-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .event-time,
+  .event-type,
+  .event-user,
+  .event-description {
+    margin-right: 10px;
+  }
+  
+  .event-time {
+    font-weight: bold;
+  }
+  
+  .event-type,
+  .event-user {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .event-description {
+    flex: 1;
+  }
+  

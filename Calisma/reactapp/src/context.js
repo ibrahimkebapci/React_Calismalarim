@@ -1,26 +1,20 @@
-
-/*
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
-import UserConsumer from "../context";
+import PropTypes from 'prop-types';
 
+// UserContext oluşturuluyor
 const UserContext = React.createContext();
 
-/*
-const reducer = (state,action) = > 
-
-{
-  switch (action.type)
-  {
-    case "DELETE_USER";
-    return{
-      ...state,
-      users: state.users.filter(user => action.payload !== user.id)    
-    }
-      default:
-        return state
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "DELETE_USER":
+      return {
+        ...state,
+        users: state.users.filter(user => action.payload !== user.id)
+      };
+    default:
+      return state;
   }
-}
+};
 
 export class UserProvider extends Component {
   state = {
@@ -56,10 +50,9 @@ export class UserProvider extends Component {
       </UserContext.Provider>
     );
   }
-    
 }
 
+// UserConsumer, context tüketici bileşeni olarak tanımlanıyor
 const UserConsumer = UserContext.Consumer;
 
 export default UserConsumer;
-*/

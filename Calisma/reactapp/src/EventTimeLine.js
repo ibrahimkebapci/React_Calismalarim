@@ -1,6 +1,6 @@
 // src/EventTimeline.js
 //3.Alan için kod
-/*
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -122,4 +122,3 @@ const EventTimeline = () => {
 };
 
 export default EventTimeline;
-*/
