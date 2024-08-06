@@ -18,38 +18,34 @@ function Login({ onLogin }) {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h2>My Account</h2>
-          <div className="avatar">
-            <img src="path_to_avatar_image" alt="avatar" />
-          </div>
         </div>
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
-            <label htmlFor="email">Login</label>
+            <label htmlFor="email">Kullanıcı Adı</label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="Email"
+              placeholder=""
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Şifre</label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              placeholder="Password"
+              placeholder=""
             />
           </div>
           <div className="form-group">
-            <a href="#forgot-password" className="forgot-password">Forgot password?</a>
+            <a href="#forgot-password" className="forgot-password">Şifremi Unuttum?</a>
           </div>
-          <button type="submit" className="login-button">Sign in</button>
+          <button type="submit" className="login-button">Giriş Yap</button>
         </form>
       </div>
     </div>
