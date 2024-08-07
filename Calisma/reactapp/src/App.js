@@ -19,11 +19,10 @@ function App() {
   return (
     <Router>
       {isAuthenticated ? (
-        <div className="App" style={{ display: 'flex' }}>
+        <div className="App">
           <Sidebar />
-          <div style={{ flex: 1, padding: '20px' }}>
+          <div className="content">
             <header className="App-header">
-              <h1>Welcome to User Stats Dashboard</h1>
             </header>
             <main>
               <Routes>
@@ -38,17 +37,7 @@ function App() {
           </div>
         </div>
       ) : (
-        <div style={{ 
-          position: 'fixed', 
-          top: 0, 
-          left: 0, 
-          width: '100%', 
-          height: '100%', 
-          backgroundColor: 'white', 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center' 
-        }}>
+        <div className="login-container">
           <Login onLogin={handleLogin} />
         </div>
       )}

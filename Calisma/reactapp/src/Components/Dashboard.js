@@ -11,14 +11,14 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <h2>Dashboard</h2>
+        <h2>Hizmetlerin Durumu</h2>
         <div className="cards-container">
-          <Card title="Pages" count="1345" color="#28a745" />
-          <Card title="Posts" count="12456" color="#6f42c1" />
-          <Card title="Users" count="21" color="#fd7e14" />
-          <Card title="Files" count="1220" color="#17a2b8" />
-          <Card title="Categories" count="65" color="#343a40" />
-          <Card title="Comments" count="9876" color="#6c757d" />
+          <Card title="Bekleyenler" count="1345" color="#28a745" />
+          <Card title="Şu Anda Yapılanlar" count="12456" color="#6f42c1" />
+          <Card title="Tamamlananlar" count="21" color="#fd7e14" />
+          <Card title="Yedek_1" count="1220" color="#17a2b8" />
+          <Card title="Yedek_2" count="65" color="#343a40" />
+          <Card title="Yedek_3" count="9876" color="#6c757d" />
         </div>
         <LatestEvents /> {/* LatestEvents bileşenini ekliyoruz */}
         <UserStats /> {/* UserStats bileşenini ekliyoruz */}
