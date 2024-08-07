@@ -1,7 +1,5 @@
-// src/Sidebar.js
-//1. Bölümün Kodları
 
-import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SidebarContainer = styled.div`
@@ -64,35 +62,35 @@ const StatusIndicator = styled.span`
 
 const Sidebar = () => {
   const menuItems = [
-    { title: 'Dashboard', count: 1, color: '#2196f3' },
-    { title: 'Pages', count: 3, color: '#9c27b0', active: true },
-    { title: 'Posts', count: 'NEW', color: '#ff5722' },
-    { title: 'Media Files', count: 1, color: '#2196f3' },
-    { title: 'Users', count: 1, color: '#ffeb3b' },
-    { title: 'Categories', count: 1, color: '#2196f3' },
-    { title: 'Tags', count: 1, color: '#ffeb3b' },
-    { title: 'Comments', count: 1, color: '#2196f3' },
-    { title: 'Settings', count: '', color: '' },
+    { title: 'Anasayfa', count: 1, color: '#2196f3', link: '/' },
+    { title: 'Kutu Hizmeti', count: 3, color: '#2196f3', active: false, link: '/kutu-hizmeti' },
+    { title: 'Broşür Hizmeti', count: 'NEW', color: '#ff5722', link: '/brosur-hizmeti' },
+    { title: 'İç Hizmetler', count: 1, color: '#2196f3', link: '/ic-hizmetler' },
+    { title: 'Medrese İhtiyaçları', count: 1, color: '#ffeb3b', link: '/medrese-ihtiyaclari' },
+    { title: 'Ayarlar', count: 1, color: '#2196f3', link: '/ayarlar' },
+    { title: 'Admin Ekranı', count: 1, color: '#ffeb3b', link: '/admin-screen' },
   ];
 
   const users = [
-    { name: 'Bess Atkins', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
-    { name: 'Brett Foster', status: 'Offline', img: 'https://via.placeholder.com/40', statusColor: 'gray' },
-    { name: 'Leona Todd', status: 'Offline', img: 'https://via.placeholder.com/40', statusColor: 'gray' },
-    { name: 'Ann Ortiz', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
-    { name: 'Nicholas Black', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
-    { name: 'Ollie Harmon', status: 'Wait', img: 'https://via.placeholder.com/40', statusColor: 'orange' },
-    { name: 'Vincent Reese', status: 'Wait', img: 'https://via.placeholder.com/40', statusColor: 'orange' },
-    { name: 'Ida Robertson', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
+    { name: 'İbrahim', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
+    { name: 'Kullanıcı 1', status: 'Offline', img: 'https://via.placeholder.com/40', statusColor: 'gray' },
+    { name: 'Kullanıcı 2', status: 'Offline', img: 'https://via.placeholder.com/40', statusColor: 'gray' },
+    { name: 'Kullanıcı 3', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
+    { name: 'Kullanıcı 4', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
+    { name: 'Kullanıcı 5', status: 'Wait', img: 'https://via.placeholder.com/40', statusColor: 'orange' },
+    { name: 'Kullanıcı 6', status: 'Wait', img: 'https://via.placeholder.com/40', statusColor: 'orange' },
+    { name: 'Kullanıcı 7', status: 'Active', img: 'https://via.placeholder.com/40', statusColor: 'green' },
   ];
 
   return (
     <SidebarContainer>
       {menuItems.map((item, index) => (
-        <MenuItem key={index} active={item.active}>
-          <MenuTitle>{item.title}</MenuTitle>
-          {item.count && <Badge color={item.color}>{item.count}</Badge>}
-        </MenuItem>
+        <Link to={item.link} key={index} style={{ textDecoration: 'none' }}>
+          <MenuItem active={item.active}>
+            <MenuTitle>{item.title}</MenuTitle>
+            {item.count && <Badge color={item.color}>{item.count}</Badge>}
+          </MenuItem>
+        </Link>
       ))}
       <div>
         {users.map((user, index) => (

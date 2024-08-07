@@ -8,6 +8,7 @@ import EventTimeline from './EventTimeLine';
 import UserStats from './Components/UserStats';
 import Login from './Login';
 import './App.css';
+import AdminScreen from './Components/AdminScreen';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -31,6 +32,8 @@ function App() {
                 <Route path="/posts" element={<Posts />} />
                 <Route path="/event-timeline" element={<EventTimeline />} />
                 <Route path="/user-stats" element={<UserStats />} />
+                <Route path="/admin-screen" element={<AdminScreen />} /> {/* Bu satırı ekleyin */}
+
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </main>
