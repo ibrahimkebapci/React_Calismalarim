@@ -1,55 +1,94 @@
 /* src/Components/AdminScreen.css */
 .admin-screen {
-  padding: 20px;
-}
-
-.admin-screen-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.button-group {
-  display: flex;
-  gap: 10px;
-}
-
-.add-customer-btn, .delete-customer-btn, .update-customer-btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #fff;
+    padding: 20px;
+    width: 100%;
+  }
   
-}
-
-.add-customer-btn {
-  background-color: #007bff;
-}
-
-.delete-customer-btn {
-  background-color: #dc3545;
-}
-
-.update-customer-btn {
-  background-color: #ffc107;
-}
-
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.admin-table th, .admin-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.admin-table th {
-  background-color: #f8f8f8;
-}
-
-.admin-table td {
-  text-align: center;
-}
+  .admin-screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-customer-btn, .delete-customer-btn, .update-customer-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .add-customer-btn {
+    background-color: #007bff;
+  }
+  
+  .delete-customer-btn {
+    background-color: #dc3545;
+  }
+  
+  .update-customer-btn {
+    background-color: #ffc107;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .table-container {
+    overflow-x: auto; /* Taşmayı önlemek için yatay kaydırma ekle */
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Tüm sütunlar eşit genişlikte olacak */
+  }
+  
+  .admin-table th, .admin-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center; /* Hücre içeriğini ortala */
+    vertical-align: middle; /* Dikey hizalamayı ortala */
+    white-space: nowrap; /* Hücre içeriğinin taşmasını önle */
+  }
+  
+  .admin-table th input, .admin-table td input {
+    margin: 0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  
