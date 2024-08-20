@@ -63,10 +63,10 @@ const StatusIndicator = styled.span`
 const Sidebar = () => {
   const menuItems = [
     { title: 'Anasayfa', count: 1, color: '#2196f3', link: '/' },
-    { title: 'Kutu Hizmeti', count: 3, color: '#2196f3', active: false, link: '/kutu-hizmeti' },
-    { title: 'Broşür Hizmeti', count: 'NEW', color: '#ff5722', link: '/brosur-hizmeti' },
-    { title: 'İç Hizmetler', count: 1, color: '#2196f3', link: '/ic-hizmetler' },
-    { title: 'Medrese İhtiyaçları', count: 1, color: '#ffeb3b', link: '/medrese-ihtiyaclari' },
+    { title: 'Depo Urunleri', count: 3, color: '#2196f3', active: false, link: '/kutu-hizmeti' },
+    { title: 'Calisanlar', count: 'NEW', color: '#ff5722', link: '/brosur-hizmeti' },
+    { title: 'iletisim', count: 1, color: '#2196f3', link: '/ic-hizmetler' },
+    { title: 'Yönetim Birimi', count: 1, color: '#ffeb3b', link: '/medrese-ihtiyaclari' },
     { title: 'Ayarlar', count: 1, color: '#2196f3', link: '/ayarlar' },
     { title: 'Admin Ekranı', count: 1, color: '#ffeb3b', link: '/admin-screen' },
   ];

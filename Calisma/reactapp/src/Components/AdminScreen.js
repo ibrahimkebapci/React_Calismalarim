@@ -3,11 +3,11 @@ import './AdminScreen.css';
 
 const AdminScreen = () => {
   const users = [
-    { id: 1, name: 'İbrahim', password: 'Kebapci', status: 'Aktif', role: 'Broşür', group: 'Mehmet Yıldız' },
-    { id: 2, name: 'Murat', password: 'Taşçı', status: 'Aktif', role: 'Kutu', group: 'Halis Abi' },
-    { id: 3, name: 'Ahmet', password: 'Yavuz', status: 'Pasif', role: 'Medrese İçi', group: 'Onur Abi' },
-    { id: 4, name: 'Kenan', password: 'Şanlı', status: 'Pasif', role: 'Asosyal', group: 'Sinan Abi' },
-    { id: 5, name: 'Mesut', password: 'Petek', status: 'Aktif', role: 'Sosyal', group: 'Geylani Abi' },
+    { id: 1, name: 'İbrahim', password: 'Kebapci', status: 'Aktif', role: 'Müdür', group: 'Yusuf ' },
+    { id: 2, name: 'Murat', password: 'Taşçı', status: 'Aktif', role: 'Depo', group: 'Ali ' },
+    { id: 3, name: 'Ahmet', password: 'Yavuz', status: 'Pasif', role: 'IT', group: 'Murat ' },
+    { id: 4, name: 'Kenan', password: 'Şanlı', status: 'Pasif', role: 'Help Desk', group: 'Ahmet ' },
+    { id: 5, name: 'Mesut', password: 'Petek', status: 'Aktif', role: 'Yemekhane', group: 'Kenan ' },
     { id: 6, name: 'Yeni Kullanıcı', password: 'Yeni Şifre', status: 'Durum', role: 'Yeni Vazife', group: 'Yeni Ders Grubu' },
     { id: 7, name: 'Kullanıcı 7', password: 'Şifre 7', status: 'Aktif', role: 'Rol 7', group: 'Grup 7' },
     { id: 8, name: 'Kullanıcı 8', password: 'Şifre 8', status: 'Aktif', role: 'Rol 8', group: 'Grup 8' },
@@ -57,9 +57,9 @@ const AdminScreen = () => {
       <div className="admin-screen-header">
         <h1>Admin Ekranı</h1>
         <div className="button-group">
-          <button className="add-customer-btn">Müşteri Ekle</button>
-          <button className="delete-customer-btn">Müşteri Sil</button>
-          <button className="update-customer-btn">Güncelle</button>
+          <button className="add-customer-btn">Personel Ekle</button>
+          <button className="delete-customer-btn">Personel Sil</button>
+          <button className="update-customer-btn">Personel Güncelle</button>
         </div>
       </div>
       <div className="search-bar">
@@ -86,8 +86,8 @@ const AdminScreen = () => {
               <th>Kullanıcı Adı</th>
               <th>Şifre</th>
               <th>Hesap Durumu</th>
-              <th>Vazife</th>
-              <th>Ders Grubu</th>
+              <th>Görev</th>
+              <th>Sorumlu Müdür</th>
             </tr>
           </thead>
           <tbody>
